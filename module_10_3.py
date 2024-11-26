@@ -14,7 +14,6 @@ class Bank:
             random1 = random.randint(50, 500)
             self.balance += random1
             if self.balance >= 500 and self.lock.locked() == True:
-                print(self.lock.locked())
                 self.lock.release()
                 print(f"Пополнение: {random1}")
 
